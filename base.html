@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="encuestarm/www/js/jquery.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+$.ajax({
+ type: "POST",
+ crossDomain: true,
+ url: "http://192.168.2.101/EncuestaApp/bdfetch.php",
+ processData: false,
+ contentType: "application/json"
+})
+.success(function(datae, textStatus, jqXHR){
+
+})
+.fail(function(jqXHR, textStatus, errorThrown){
+alert("error");
+});
+</script>
